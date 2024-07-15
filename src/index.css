@@ -2,20 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Libre Baskerville */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/libre-baskerville-regular.woff2') format('woff2'),
+       url('./fonts/libre-baskerville-regular.woff') format('woff'),
+       url('./fonts/libre-baskerville-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/libre-baskerville-bold.woff2') format('woff2'),
+       url('./fonts/libre-baskerville-bold.woff') format('woff'),
+       url('./fonts/libre-baskerville-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/libre-baskerville-italic.woff2') format('woff2'),
+       url('./fonts/libre-baskerville-italic.woff') format('woff'),
+       url('./fonts/libre-baskerville-italic.ttf') format('truetype');
+}
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/montserrat-regular.woff2') format('woff2'),
+       url('./fonts/montserrat-regular.woff') format('woff'),
+       url('./fonts/montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/montserrat-bold.woff2') format('woff2'),
+       url('./fonts/montserrat-bold.woff') format('woff'),
+       url('./fonts/montserrat-bold.ttf') format('truetype');
+}
+
+/* Pacifico */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/pacifico-regular.woff2') format('woff2'),
+       url('./fonts/pacifico-regular.woff') format('woff'),
+       url('./fonts/pacifico-regular.ttf') format('truetype');
+}
+
+/* Define classes for your fonts */
 .libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
+.libre-baskerville-italic {
+  font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.montserrat-regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-style: normal;
 }

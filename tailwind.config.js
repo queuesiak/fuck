@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        greatvibes: ['Great Vibes', 'cursive'],
+        merriweather: ['Merriweather', 'serif'],
+      },
+    },
   },
   plugins: [],
 };
