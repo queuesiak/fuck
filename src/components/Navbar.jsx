@@ -1,48 +1,62 @@
-// src/components/NavigationBar.js
 import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
-import logo2 from "../assets/logoblack.png";
 
 const NavigationBar = () => {
+  const linkVariants = {
+    hover: {
+      scale: 1.2,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <nav className="flex justify-center items-center bg-transparent bg-gray-900 p-2">
       <ul className="flex items-center space-x-28 text-xs">
         <li>
-          <a
-            href="#"
-            className="text-white uppercase font-merriweather tracking-widest"
+          <motion.div
+            whileHover="hover"
+            variants={linkVariants}
+            className="text-white uppercase font-merriweather font-semibold text-xl tracking-widest"
           >
-            Home
-          </a>
+            <Link to="/">Home</Link>
+          </motion.div>
         </li>
         <li>
-          <a
-            href="#"
-            className="text-white uppercase font-merriweather tracking-widest"
+          <motion.div
+            whileHover="hover"
+            variants={linkVariants}
+            className="text-white uppercase font-merriweather font-semibold text-xl tracking-widest"
           >
-            Projects
-          </a>
+            <Link to="/projects">Projects</Link>
+          </motion.div>
         </li>
         <li>
-          <a href="#" className="text-white text-3xl font-greatvibes">
+          <Link to="/" className="text-white text-3xl font-greatvibes">
             <img src={logo} alt="Logo" className="h-40" />
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
-            className="text-white uppercase font-merriweather tracking-widest"
+          <motion.div
+            whileHover="hover"
+            variants={linkVariants}
+            className="text-white  uppercase font-merriweather font-semibold text-xl tracking-widest"
           >
-            Contact
-          </a>
+            <Link to="/contact">Contact</Link>
+          </motion.div>
         </li>
         <li>
-          <a
-            href="#"
-            className="text-white uppercase font-merriweather tracking-widest"
+          <motion.div
+            whileHover="hover"
+            variants={linkVariants}
+            className="text-white uppercase font-merriweather font-semibold text-xl tracking-widest"
           >
-            About
-          </a>
+            <Link to="/about">About</Link>
+          </motion.div>
         </li>
       </ul>
     </nav>

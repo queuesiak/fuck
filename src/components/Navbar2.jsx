@@ -4,7 +4,7 @@ import logobl from "../assets/logoblack.png";
 
 const NavigationBar = () => {
   return (
-    <nav className="flex justify-center items-center bg-opacity-20 bg-gray-900 p-2">
+    <nav className="flex justify-center items-center bg-opacity-30 bg-gray-900 p-2">
       <ul className="flex items-center space-x-28 text-xs">
         <li>
           <a
